@@ -1,0 +1,45 @@
+{
+    "name": "whiskyjs/omnipay-tinkoff",
+    "description": "Tinkoff.Payments gateway for Omnipay",
+    "keywords": [
+        "omnipay",
+        "tinkoff"
+    ],
+    "homepage": "https://github.com/whiskyjs/omnipay-tinkoff/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Selyuchenko",
+            "email": "alexander.selyuchenko@gmail.com",
+            "homepage": "https://github.com/whiskyjs/"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "github",
+            "url": "https://github.com/thephpleague/omnipay-common"
+        }
+    ],
+    "require": {
+        "omnipay/common": "master",
+        "ext-json": "*",
+        "php-http/guzzle6-adapter": "^2.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12",
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpro/grumphp": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "whiskyjs\\Omnipay\\Tinkoff\\": "src"
+        }
+    },
+    "scripts": {
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/",
+        "analyze": "phpstan analyse src tests"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

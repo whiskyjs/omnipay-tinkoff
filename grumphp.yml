@@ -1,0 +1,8 @@
+parameters:
+    tasks:
+        phpcs:
+            standard: PSR2
+            ignore_patterns: [./vendor/*]
+        phpstan:
+            level: 0
+            ignore_patterns: [./vendor/*]
